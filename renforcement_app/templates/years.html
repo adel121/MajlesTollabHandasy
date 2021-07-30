@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+
+<h2 style="text-align: center; margin: 30px"> {{year}}</h2>
+    <div style="height:100px" class="w-hidden-small w-hidden-tiny buttonalign">
+    	{% for playlist in playlists %}
+    	<a class="buttonhome button" href="{{playlist.Link}}"><h1 style="color:white">{{playlist.Course_name}}</h1></a>
+    	{% endfor %}
+    </div>
+{% endblock %}
